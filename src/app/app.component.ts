@@ -4,18 +4,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { RegisterComponent } from "./register/register.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
+    RouterOutlet,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule, 
+    RouterModule,
     HeaderComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    RegisterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
